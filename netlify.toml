@@ -1,5 +1,9 @@
 [build]
 [build]
+  base = ""
+    publish = "."
+      command = ""
+        ignore = "exit 0"[build]
   publish = "."
     command = ""
     
