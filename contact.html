@@ -66,8 +66,8 @@
         <div class="fg"><label>Email *</label><input type="email" id="fe" placeholder="電子郵件"></div>
       </div>
       <div class="form-row">
-        <div class="fg"><label>電話</label><input type="tel" id="ft" placeholder="聯絡電話"></div>
-        <div class="fg"><label>公司名稱</label><input type="text" id="fc" placeholder="公司或機構"></div>
+        <div class="fg"><label>電話 *</label><input type="tel" id="ft" placeholder="聯絡電話"></div>
+        <div class="fg"><label>公司名稱 *</label><input type="text" id="fc" placeholder="公司或機構"></div>
       </div>
       <div class="fg"><label>服務需求</label><input type="text" id="fs" placeholder="例：地熱潛勢評估、工程地質調查…"></div>
       <div class="fg"><label>訊息內容 *</label><textarea id="fm" placeholder="請描述您的專案需求或問題…"></textarea></div>
@@ -91,18 +91,18 @@ function toggleNav(){ document.getElementById('navLinks').classList.toggle('open
 function submitForm(){
   var n=document.getElementById('fn').value.trim();
   var e=document.getElementById('fe').value.trim();
+  var t=document.getElementById('ft').value.trim();
+  var c=document.getElementById('fc').value.trim();
   var m=document.getElementById('fm').value.trim();
-  if(!n||!e||!m){alert('請填寫必填欄位：姓名、Email、訊息內容');return;}
+  if(!n||!e||!t||!c||!m){alert('請填寫必填欄位：姓名、Email、電話、公司名稱、訊息內容');return;}
   var btn=document.querySelector('.c-btn');
   btn.textContent='送出中…';btn.disabled=true;
 
-  var subject='[KaiRock 官網] 來自 '+n+' 的詢問';
-  var body='姓名：'+n+'\nEmail：'+e;
-  var t=document.getElementById('ft');var c=document.getElementById('fc');var s=document.getElementById('fs');
-  if(t&&t.value)body+='\n電話：'+t.value;
-  if(c&&c.value)body+='\n公司：'+c.value;
-  if(s&&s.value)body+='\n服務：'+s.value;
-  body+='\n\n訊息：\n'+m;
+  var subject='【凱岩官網詢問】'+c+' — '+n+'的來信';
+  var s=document.getElementById('fs')?document.getElementById('fs').value.trim():'';
+  var body='姓名：'+n+'\nEmail：'+e+'\n電話：'+t+'\n公司：'+c;
+  if(s)body+='\n服務需求：'+s;
+  body+='\n\n訊息：\n'+m+'\n\n---\n來源：kairock.com 官網聯絡表單';
 
   fetch('https://api.web3forms.com/submit',{
     method:'POST',
