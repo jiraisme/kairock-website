@@ -95,11 +95,41 @@ function submitForm(){
   if(!n||!e||!m){alert('請填寫必填欄位：姓名、Email、訊息內容');return;}
   var btn=document.querySelector('.c-btn');
   btn.textContent='送出中…';btn.disabled=true;
-  setTimeout(function(){
-    document.getElementById('cok').style.display='block';
-    btn.style.display='none';
-    ['fn','fe','ft','fc','fs','fm'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
-  },900);
+
+  var subject='[KaiRock 官網] 來自 '+n+' 的詢問';
+  var body='姓名：'+n+'\nEmail：'+e;
+  var t=document.getElementById('ft');var c=document.getElementById('fc');var s=document.getElementById('fs');
+  if(t&&t.value)body+='\n電話：'+t.value;
+  if(c&&c.value)body+='\n公司：'+c.value;
+  if(s&&s.value)body+='\n服務：'+s.value;
+  body+='\n\n訊息：\n'+m;
+
+  fetch('https://api.web3forms.com/submit',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({
+      access_key:'961c8df2-6e04-4d3c-bfdc-cd1ae84d5826',
+      subject:subject,
+      from_name:n,
+      email:e,
+      message:body
+    })
+  })
+  .then(function(r){return r.json();})
+  .then(function(d){
+    if(d.success){
+      document.getElementById('cok').style.display='block';
+      btn.style.display='none';
+      ['fn','fe','ft','fc','fs','fm'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+    } else {
+      btn.textContent='送出訊息';btn.disabled=false;
+      alert('送出失敗，請稍後再試或直接來信 kelvin.lin@kairock.com');
+    }
+  })
+  .catch(function(){
+    btn.textContent='送出訊息';btn.disabled=false;
+    alert('網路異常，請稍後再試或直接來信 kelvin.lin@kairock.com');
+  });
 }
 </script>
 </body>
