@@ -36,19 +36,19 @@ footer{background:#181b21;padding:60px 6% 28px;}
 .footer-inner{max-width:1200px;margin:0 auto;}
 .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:50px;margin-bottom:48px;}
 .footer-logo-row{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
-.footer-logo-img{display:block;height:28px;width:28px;object-fit:contain;flex-shrink:0;filter:brightness(0) invert(1);opacity:0.6;}
+.footer-logo-img{display:block;height:40px;width:40px;object-fit:contain;flex-shrink:0;}
 .footer-logo-row .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:#fff;letter-spacing:3px;}
 .footer-logo-row .zh{font-size:0.6rem;color:var(--mid);letter-spacing:1px;font-family:'Noto Sans TC',sans-serif;}
-.footer-brand p{font-size:0.83rem;color:rgba(255,255,255,0.3);line-height:1.85;max-width:270px;font-weight:300;}
+.footer-brand p{font-size:0.83rem;color:rgba(255,255,255,0.6);line-height:1.85;max-width:270px;font-weight:300;}
 .footer-col h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--light);margin-bottom:16px;}
 .footer-col ul{list-style:none;}
 .footer-col li{margin-bottom:9px;}
-.footer-col a{color:rgba(255,255,255,0.38);text-decoration:none;font-size:0.84rem;font-weight:300;transition:0.2s;}
+.footer-col a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:0.84rem;font-weight:300;transition:0.2s;}
 .footer-col a:hover{color:var(--light);}
-.footer-col p{color:rgba(255,255,255,0.38);font-size:0.84rem;margin-bottom:7px;font-weight:300;}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.07);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
-.footer-bottom p{font-size:0.74rem;color:rgba(255,255,255,0.18);font-weight:300;}
-.footer-slogan{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:300;font-size:0.8rem;color:rgba(255,255,255,0.18);}
+.footer-col p{color:rgba(255,255,255,0.65);font-size:0.84rem;margin-bottom:7px;font-weight:300;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:0.74rem;color:rgba(255,255,255,0.45);font-weight:300;}
+.footer-slogan{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:300;font-size:0.8rem;color:rgba(255,255,255,0.45);}
 
 /* BUTTONS */
 .btn-fill{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:2.5px;text-transform:uppercase;padding:14px 38px;background:var(--light);color:var(--deep);text-decoration:none;transition:0.2s;display:inline-block;}
