@@ -11,7 +11,7 @@ body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);-
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:9999;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(34,38,47,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.06);}
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0;}
-.nav-logo-img{display:block;height:36px;width:36px;object-fit:contain;flex-shrink:0;filter:brightness(0) invert(1);opacity:0.9;}
+.nav-logo-img{display:block;height:36px;width:36px;object-fit:contain;flex-shrink:0;}
 .nav-logo-text .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:#fff;letter-spacing:3px;line-height:1;}
 .nav-logo-text .zh{font-size:0.6rem;color:var(--light);letter-spacing:1px;margin-top:3px;font-weight:300;font-family:'Noto Sans TC',sans-serif;}
 .nav-links{display:flex;flex-shrink:0;}
