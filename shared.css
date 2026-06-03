@@ -12,8 +12,8 @@ body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);-
 nav{position:fixed;top:0;left:0;right:0;z-index:9999;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(34,38,47,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.06);}
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0;}
 .nav-logo-img{display:block;height:36px;width:36px;object-fit:contain;flex-shrink:0;}
-.nav-logo-text .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:#fff;letter-spacing:3px;line-height:1;}
-.nav-logo-text .zh{font-size:0.6rem;color:var(--light);letter-spacing:1px;margin-top:3px;font-weight:300;font-family:'Noto Sans TC',sans-serif;}
+.nav-logo-text .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.3rem;color:#fff;letter-spacing:3px;line-height:1;}
+.nav-logo-text .zh{font-size:0.78rem;color:var(--light);letter-spacing:1px;margin-top:3px;font-weight:300;font-family:'Noto Sans TC',sans-serif;}
 .nav-links{display:flex;flex-shrink:0;}
 .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:500;color:rgba(255,255,255,0.62);text-decoration:none;font-size:0.88rem;letter-spacing:1.5px;text-transform:uppercase;padding:0 13px;line-height:72px;display:block;transition:color 0.2s;border-bottom:2px solid transparent;border-top:2px solid transparent;white-space:nowrap;}
 .nav-links a:hover,.nav-links a.active{color:var(--light);border-bottom-color:var(--light);}
