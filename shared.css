@@ -2,7 +2,7 @@
 :root{
   --deep:#3C424F;--mid:#8E8F9B;--light:#C9C4B7;
   --bg:#F5F3EF;--white:#fff;--dark:#22262f;
-  --text:#3C424F;--muted:#6b7280;--border:#ddd9d0;
+  --text:#3C424F;--muted:#4d5566;--border:#ddd9d0;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
