@@ -37,8 +37,8 @@ footer{background:#181b21;padding:60px 6% 28px;}
 .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:50px;margin-bottom:48px;}
 .footer-logo-row{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
 .footer-logo-img{display:block;height:40px;width:40px;object-fit:contain;flex-shrink:0;}
-.footer-logo-row .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:#fff;letter-spacing:3px;}
-.footer-logo-row .zh{font-size:0.6rem;color:var(--mid);letter-spacing:1px;font-family:'Noto Sans TC',sans-serif;}
+.footer-logo-row .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.3rem;color:#fff;letter-spacing:3px;}
+.footer-logo-row .zh{font-size:0.78rem;color:var(--mid);letter-spacing:1px;font-family:'Noto Sans TC',sans-serif;}
 .footer-brand p{font-size:0.83rem;color:rgba(255,255,255,0.6);line-height:1.85;max-width:270px;font-weight:300;}
 .footer-col h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--light);margin-bottom:16px;}
 .footer-col ul{list-style:none;}
