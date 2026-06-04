@@ -66,3 +66,8 @@ footer{background:#181b21;padding:60px 6% 28px;}
   .nav-links.open a{line-height:50px;padding:0;border:none;border-top:1px solid rgba(255,255,255,0.06);}
   .footer-grid{grid-template-columns:1fr;}
 }
+
+/* === SCROLL REVEAL（極簡淡入上浮）=== */
+html.has-reveal :is(.sec-hdr,.sec-label,.svc-intro,.svc-cta-h,.values-hdr,.t-hdr,.proc-hdr,.about-wrap,.view-all,.intro-p,.founder-p,.stat-box-l,.svc-card,.pcard-wrap,.v-card,.svc-item,.detail-block,.pg-card,.pstep,.tc,.c-blk,.fg){opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);}
+html.has-reveal :is(.sec-hdr,.sec-label,.svc-intro,.svc-cta-h,.values-hdr,.t-hdr,.proc-hdr,.about-wrap,.view-all,.intro-p,.founder-p,.stat-box-l,.svc-card,.pcard-wrap,.v-card,.svc-item,.detail-block,.pg-card,.pstep,.tc,.c-blk,.fg).in{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){html.has-reveal :is(.sec-hdr,.sec-label,.svc-intro,.svc-cta-h,.values-hdr,.t-hdr,.proc-hdr,.about-wrap,.view-all,.intro-p,.founder-p,.stat-box-l,.svc-card,.pcard-wrap,.v-card,.svc-item,.detail-block,.pg-card,.pstep,.tc,.c-blk,.fg){opacity:1!important;transform:none!important;transition:none!important;}}
