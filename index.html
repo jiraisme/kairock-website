@@ -66,7 +66,7 @@
 .link-arr{display:inline-flex;align-items:center;gap:8px;margin-top:30px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.76rem;letter-spacing:2px;text-transform:uppercase;color:var(--deep);text-decoration:none;border-bottom:1px solid var(--deep);padding-bottom:2px;transition:0.2s;}
 .link-arr:hover{color:var(--mid);border-color:var(--mid);}
 /* SERVICES grid */
-.sec{padding:90px 6%;}
+.sec{padding:clamp(68px,9vw,128px) 6%;}
 .sec-hdr{display:flex;justify-content:space-between;align-items:flex-end;max-width:1200px;margin:0 auto 44px;}
 .sec-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.9rem,3.5vw,2.8rem);text-transform:uppercase;letter-spacing:-0.5px;line-height:1.05;color:var(--deep);}
 .view-all{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.76rem;letter-spacing:2px;text-transform:uppercase;color:var(--deep);text-decoration:none;border-bottom:1px solid var(--deep);padding-bottom:2px;transition:0.2s;}
@@ -95,8 +95,8 @@
 .pcard:hover .pcard-tags{max-height:40px;}
 .ptag{font-family:'Barlow Condensed',sans-serif;font-size:0.63rem;letter-spacing:1px;text-transform:uppercase;background:rgba(201,196,183,0.12);border:1px solid rgba(201,196,183,0.22);color:var(--light);padding:3px 7px;}
 /* CTA */
-.cta-strip{background:var(--bg);padding:76px 6%;}
-.cta-inner{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;}
+.cta-strip{background:var(--bg);padding:clamp(64px,7vw,104px) 6%;}
+.cta-inner{max-width:720px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;}
 .cta-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,2.8vw,2.2rem);text-transform:uppercase;color:var(--deep);margin-bottom:6px;}
 .cta-p{font-weight:400;font-size:0.93rem;color:var(--muted);}
 @media(max-width:1050px){
@@ -113,7 +113,8 @@
   .svc-grid,.proj-grid{grid-template-columns:1fr;}
   .cta-inner{flex-direction:column;align-items:flex-start;}
   .sec-hdr{flex-direction:column;align-items:flex-start;gap:12px;}
-  .hero-bg{background-position:58% top;}
+  .hero-bg{background-position:48% top;}
+  .hero-overlay{background:linear-gradient(to bottom,rgba(20,23,32,0.5) 0%,rgba(20,23,32,0.5) 42%,rgba(20,23,32,0.74) 100%);}
 }
 </style>
 <!-- Google tag (gtag.js) -->
