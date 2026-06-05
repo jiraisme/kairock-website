@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>凱岩工程顧問有限公司 KaiRock CO., LTD.</title>
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="canonical" href="https://kairock.com/">
 <meta name="description" content="凱岩工程顧問提供地熱資源評估、工程地質調查、鑽井監督及專案管理，依循國際標準，全方位支援台灣地熱開發。">
 <meta name="keywords" content="地熱開發,地熱資源評估,工程地質,鑽井監督,凱岩,KaiRock,台灣地熱,地質顧問">
@@ -23,21 +23,21 @@
 <style>
 /* HERO */
 .hero{min-height:85vh;position:relative;overflow:hidden;display:flex;align-items:center;background:#181b21;}
-.hero-bg{position:absolute;inset:0;background-image:url('img/hero_bg.jpg');background-size:cover;background-position:16% top;transform-origin:center top;filter:brightness(1.3) saturate(1.05) contrast(0.98);animation:hzoom 28s ease-in-out infinite alternate;}
+.hero-bg{position:absolute;inset:0;background-image:url('img/hero_bg.jpg');background-size:cover;background-position:center top;transform-origin:center top;filter:brightness(1.3) saturate(1.05) contrast(0.98);animation:hzoom 28s ease-in-out infinite alternate;}
 .hero-bg-fb{position:absolute;inset:0;background:linear-gradient(135deg,#141720 0%,#1e222a 50%,#161920 100%);z-index:0;}
-@keyframes hzoom{from{transform:scale(-1.07,1.07);}to{transform:scale(-1.11,1.11);}}
+@keyframes hzoom{from{transform:scale(1.07);}to{transform:scale(1.11);}}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(20,23,32,0.9) 0%,rgba(20,23,32,0.52) 44%,rgba(20,23,32,0.04) 100%),linear-gradient(to top,rgba(20,23,32,0.6) 0%,transparent 42%);}
 .hero-grid{position:absolute;inset:0;z-index:1;opacity:0.025;background-image:linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px);background-size:72px 72px;}
 .hero-content{position:relative;z-index:2;padding:104px 7% 32px;max-width:740px;}
 .eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:40px;}
 .eyebrow-line{width:32px;height:1px;background:var(--light);}
-.eyebrow-txt{font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:0.78rem;color:var(--light);letter-spacing:3px;text-transform:uppercase;}
+.eyebrow-txt{font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:0.78rem;color:var(--light);letter-spacing:3px;text-transform:uppercase;text-shadow:0 1px 10px rgba(8,10,14,0.7);}
 .brand-en{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3.5rem,8vw,7rem);color:#fff;line-height:0.88;letter-spacing:-1px;text-transform:uppercase;margin-bottom:14px;}
 .brand-en .outline{-webkit-text-stroke:1.5px rgba(201,196,183,0.45);color:transparent;}
-.brand-zh{font-family:'Noto Sans TC',sans-serif;font-weight:500;font-size:clamp(1rem,2.2vw,1.45rem);color:rgba(255,255,255,0.85);letter-spacing:5px;margin-bottom:4px;}
-.brand-en2{font-family:'Barlow Condensed',sans-serif;font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.38);letter-spacing:3px;margin-bottom:38px;}
+.brand-zh{font-family:'Noto Sans TC',sans-serif;font-weight:500;font-size:clamp(1rem,2.2vw,1.45rem);color:rgba(255,255,255,0.92);letter-spacing:5px;margin-bottom:4px;text-shadow:0 1px 12px rgba(8,10,14,0.7);}
+.brand-en2{font-family:'Barlow Condensed',sans-serif;font-weight:400;font-size:0.9rem;color:rgba(255,255,255,0.58);letter-spacing:3px;margin-bottom:38px;text-shadow:0 1px 10px rgba(8,10,14,0.7);}
 .hero-rule{width:44px;height:1px;background:var(--mid);margin-bottom:32px;}
-.hero-desc{font-weight:300;font-size:0.93rem;color:rgba(255,255,255,0.66);line-height:1.9;max-width:440px;margin-bottom:48px;padding-left:18px;border-left:1px solid rgba(201,196,183,0.28);}
+.hero-desc{font-weight:300;font-size:0.93rem;color:rgba(255,255,255,0.82);line-height:1.9;max-width:440px;margin-bottom:48px;padding-left:18px;border-left:1px solid rgba(201,196,183,0.28);text-shadow:0 1px 10px rgba(8,10,14,0.7);}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
 .hero-stats{position:absolute;bottom:40px;right:6%;z-index:2;display:flex;gap:48px;}
 .hstat-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.8rem;color:#fff;line-height:1;}
@@ -95,7 +95,8 @@
 .pcard:hover .pcard-tags{max-height:40px;}
 .ptag{font-family:'Barlow Condensed',sans-serif;font-size:0.63rem;letter-spacing:1px;text-transform:uppercase;background:rgba(201,196,183,0.12);border:1px solid rgba(201,196,183,0.22);color:var(--light);padding:3px 7px;}
 /* CTA */
-.cta-strip{background:var(--bg);padding:76px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;}
+.cta-strip{background:var(--bg);padding:76px 6%;}
+.cta-inner{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;}
 .cta-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,2.8vw,2.2rem);text-transform:uppercase;color:var(--deep);margin-bottom:6px;}
 .cta-p{font-weight:400;font-size:0.93rem;color:var(--muted);}
 @media(max-width:1050px){
@@ -110,8 +111,9 @@
 @media(max-width:680px){
   .about-txt{padding:46px 24px;}
   .svc-grid,.proj-grid{grid-template-columns:1fr;}
-  .cta-strip{flex-direction:column;}
+  .cta-inner{flex-direction:column;align-items:flex-start;}
   .sec-hdr{flex-direction:column;align-items:flex-start;gap:12px;}
+  .hero-bg{background-position:58% top;}
 }
 </style>
 <!-- Google tag (gtag.js) -->
@@ -225,12 +227,14 @@
 </section>
 
 <div class="cta-strip">
-  <div>
-    <div class="about-tag">Get in Touch</div>
-    <div class="cta-h">準備開始您的地熱開發專案？</div>
-    <p class="cta-p">聯絡凱岩工程顧問，取得專業技術支援與顧問服務。</p>
+  <div class="cta-inner">
+    <div>
+      <div class="about-tag">Get in Touch</div>
+      <div class="cta-h">準備開始您的地熱開發專案？</div>
+      <p class="cta-p">聯絡凱岩工程顧問，取得專業技術支援與顧問服務。</p>
+    </div>
+    <a href="contact.html" class="btn-dark">立即聯絡我們</a>
   </div>
-  <a href="contact.html" class="btn-dark">立即聯絡我們</a>
 </div>
 
 <footer>
