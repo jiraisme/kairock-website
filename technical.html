@@ -23,7 +23,7 @@
 .t-hdr{text-align:center;max-width:620px;margin:0 auto 60px;}
 .t-lbl{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:10px;}
 .t-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--deep);margin-bottom:12px;}
-.t-rule{width:36px;height:2px;background:var(--deep);margin:12px auto 20px;}
+.t-rule{width:36px;height:2px;background:var(--accent);margin:12px auto 20px;}
 .t-hdr p{font-weight:400;font-size:0.93rem;color:var(--muted);line-height:1.8;}
 .t-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:1200px;margin:0 auto;}
 .tc{background:var(--bg);padding:34px 24px;border-top:2px solid transparent;transition:0.25s;}
@@ -31,22 +31,22 @@
 .tc-lbl{font-family:'Barlow Condensed',sans-serif;font-size:0.64rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--mid);margin-bottom:12px;display:block;}
 .tc h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--deep);margin-bottom:8px;}
 .tc p{font-size:0.84rem;color:var(--muted);line-height:1.7;font-weight:400;}
-.int-sec{background:linear-gradient(rgba(34,38,47,0.90),rgba(34,38,47,0.93)),url('img/integration_bg.jpg') center/cover;padding:clamp(68px,9vw,128px) 6%;}
+.int-sec{background:linear-gradient(rgba(244,245,246,0.92),rgba(244,245,246,0.95)),url('img/integration_bg.jpg') center/cover;padding:clamp(68px,9vw,128px) 6%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .int-hdr{max-width:1200px;margin:0 auto 48px;}
-.int-lbl{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--light);display:block;margin-bottom:10px;}
-.int-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:#fff;}
+.int-lbl{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:10px;}
+.int-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--text);}
 .int-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1200px;margin:0 auto;}
-.ic{padding:40px 32px;border:1px solid rgba(255,255,255,0.08);transition:0.25s;}
-.ic:hover{background:rgba(255,255,255,0.05);}
-.ic h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;color:#fff;margin-bottom:10px;}
-.ic p{font-size:0.88rem;color:rgba(255,255,255,0.5);line-height:1.8;font-weight:400;}
+.ic{padding:40px 32px;border:1px solid var(--border);background:rgba(255,255,255,0.6);transition:0.25s;}
+.ic:hover{background:#fff;}
+.ic h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;color:var(--text);margin-bottom:10px;}
+.ic p{font-size:0.88rem;color:var(--muted);line-height:1.8;font-weight:400;}
 .proc-sec{background:var(--bg);padding:120px 6%;}
 .proc-hdr{text-align:center;margin-bottom:60px;}
 .proc-steps{display:flex;align-items:flex-start;justify-content:center;max-width:1000px;margin:0 auto;position:relative;}
 .proc-steps::before{content:'';position:absolute;top:28px;left:calc(10% + 30px);right:calc(10% + 30px);height:1px;background:var(--border);z-index:0;}
 .pstep{flex:1;text-align:center;position:relative;z-index:1;padding:0 10px;}
 .pstep-c{width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1rem;color:var(--mid);margin:0 auto 14px;transition:0.25s;}
-.pstep:hover .pstep-c{background:var(--deep);color:#fff;border-color:var(--deep);}
+.pstep:hover .pstep-c{background:var(--accent);color:#fff;border-color:var(--accent);}
 .pstep h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.92rem;color:var(--deep);margin-bottom:4px;}
 .pstep p{font-size:0.8rem;color:var(--muted);font-weight:400;}
 @media(max-width:1000px){.t-grid{grid-template-columns:repeat(2,1fr);}.int-grid{grid-template-columns:1fr 1fr;}}
@@ -101,7 +101,7 @@
   </div>
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
-<div class="page-hero" style="background:linear-gradient(rgba(34,38,47,0.78),rgba(34,38,47,0.86)),url('img/technical_hero.jpg') center 50%/cover;"><div class="sec-label">Technical Capabilities</div><h1>技術能力</h1><p>整合地質、地球物理、地球化學等多領域專業技術，運用先進分析方法提供精準解決方案。</p></div>
+<div class="page-hero"><div class="sec-label">Technical Capabilities</div><h1>技術能力</h1><p>整合地質、地球物理、地球化學等多領域專業技術，運用先進分析方法提供精準解決方案。</p></div>
 <section class="tech-sec">
   <div class="t-hdr"><span class="t-lbl">Core Technologies</span><h2 class="t-h">核心技術能力</h2><div class="t-rule"></div><p>從現場調查到數值模擬，凱岩工程顧問具備完整的技術能力，確保每個環節的專業品質。</p></div>
   <div class="t-grid">
@@ -134,12 +134,12 @@
   </div>
 </div>
 <style>
-.svc-cta{background:var(--deep);padding:clamp(64px,7vw,104px) 6%;}
+.svc-cta{background:#F4F5F6;padding:clamp(64px,7vw,104px) 6%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .svc-cta-inner{max-width:720px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:28px;}
-.svc-cta-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;color:#fff;}
-.svc-cta-p{font-size:0.92rem;color:rgba(255,255,255,0.62);line-height:1.7;margin-top:10px;max-width:520px;}
-.svc-cta a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;padding:14px 36px;background:var(--light);color:var(--deep);text-decoration:none;transition:0.2s;white-space:nowrap;}
-.svc-cta a:hover{background:#fff;}
+.svc-cta-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;color:var(--text);}
+.svc-cta-p{font-size:0.92rem;color:var(--muted);line-height:1.7;margin-top:10px;max-width:520px;}
+.svc-cta a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;padding:14px 36px;background:var(--accent);color:#fff;text-decoration:none;transition:0.2s;white-space:nowrap;}
+.svc-cta a:hover{background:var(--accent-dark);}
 @media(max-width:680px){.svc-cta-inner{flex-direction:column;align-items:flex-start;}}
 </style>
 <div class="svc-cta"><div class="svc-cta-inner"><div><div class="svc-cta-h">把地熱技術難題交給專業團隊</div><p class="svc-cta-p">整合地質、地球物理與地球化學分析，以科學數據支持您的開發決策。</p></div><a href="contact.html">預約技術諮詢</a></div></div>
