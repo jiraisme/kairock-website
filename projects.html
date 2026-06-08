@@ -38,6 +38,34 @@
 .ptag{font-family:'Barlow Condensed',sans-serif;font-size:0.63rem;letter-spacing:1px;text-transform:uppercase;background:rgba(201,196,183,0.12);border:1px solid rgba(201,196,183,0.22);color:var(--light);padding:3px 8px;}
 @media(max-width:900px){.pg-grid{grid-template-columns:1fr 1fr;}.pg-card.wide{grid-column:span 2;}}
 @media(max-width:560px){.pg-grid{grid-template-columns:1fr;}.pg-card.wide{grid-column:span 1;aspect-ratio:4/3;}}
+/* === 實績區（Track Record） === */
+.cred-sec{padding:clamp(68px,9vw,120px) 6%;background:var(--bg);border-top:1px solid var(--border);}
+.cred-h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.7rem,3.5vw,2.6rem);color:var(--deep);line-height:1.15;margin-bottom:18px;}
+.cred-intro{max-width:840px;font-size:0.95rem;line-height:2;color:var(--muted);margin-bottom:56px;}
+.cred-grp{margin-bottom:50px;}
+.cred-grp:last-child{margin-bottom:0;}
+.cred-grp-h{display:flex;align-items:baseline;gap:12px;margin-bottom:22px;}
+.cred-grp-h .t{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:1px;color:var(--deep);}
+.cred-grp-h .n{font-size:0.72rem;font-weight:500;color:var(--mid);letter-spacing:1px;}
+.cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.cred-card{background:var(--white);padding:28px 26px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;}
+.cred-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(60,66,79,0.10);}
+.cred-card .client{font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:1px;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:13px;line-height:1.5;}
+.cred-card .ct{font-weight:600;font-size:1.12rem;color:var(--text);line-height:1.55;margin-bottom:13px;}
+.cred-card .chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px;}
+.cred-card .chips span{font-family:'Barlow Condensed',sans-serif;font-size:0.76rem;letter-spacing:0.5px;color:var(--mid);background:var(--bg);padding:3px 11px;}
+.cred-card .chips span.role{color:var(--deep);font-weight:700;background:transparent;padding-left:0;}
+.cred-card .cd{font-size:0.93rem;color:var(--muted);line-height:1.85;margin-top:auto;}
+/* 地熱潛勢區總覽橫幅 */
+.cred-geo{margin:0 0 56px;background:var(--deep);color:#fff;padding:clamp(40px,4.5vw,58px) clamp(32px,4vw,56px);}
+.cred-geo .glabel{font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--light);margin-bottom:14px;}
+.cred-geo-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.2;margin:0 0 20px;color:#fff;}
+.cred-geo h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.25;margin-bottom:18px;color:#fff;}
+.cred-regions{display:flex;flex-wrap:wrap;gap:8px;}
+.cred-regions span{font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:1px;color:#fff;border:1px solid rgba(255,255,255,0.28);padding:6px 14px;}
+.cred-geo p{font-size:0.92rem;line-height:2;color:rgba(255,255,255,0.82);max-width:780px;}
+@media(max-width:900px){.cred-grid{grid-template-columns:1fr 1fr;}.cred-geo{grid-template-columns:1fr;gap:26px;}}
+@media(max-width:560px){.cred-grid{grid-template-columns:1fr;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5F2FSPGDX"></script>
@@ -104,8 +132,100 @@
     <div class="pg-card" data-cat="geothermal"><img loading="lazy"  src="img/proj_miaoli.jpg" alt="苗栗泰安地熱潛勢評估——溫泉露頭地球化學水樣採集"><div class="pg-ov"></div><div class="pg-body"><div class="pg-loc">苗栗縣 · 地熱潛勢評估</div><div class="pg-name">泰安地熱潛勢評估</div><div class="pg-desc">整合地質、地球化學與地球物理資料，完成地熱潛勢區劃定。</div><div class="pg-tags"><span class="ptag">資源評估</span><span class="ptag">潛勢分析</span></div></div></div>
     <div class="pg-card" data-cat="engineering"><img loading="lazy"  src="img/proj_engineering.jpg" alt="山區開發工程地質評估——邊坡穩定分析與基礎地質調查"><div class="pg-ov"></div><div class="pg-body"><div class="pg-loc">工程地質 · 安全評估</div><div class="pg-name">山區開發工程地質評估</div><div class="pg-desc">邊坡穩定分析、基礎調查、地質災害評估，確保工程安全。</div><div class="pg-tags"><span class="ptag">邊坡分析</span><span class="ptag">安全評估</span></div></div></div>
     <div class="pg-card" data-cat="engineering"><img loading="lazy"  src="img/proj_infra.jpg" alt="基礎設施地質調查——地質鑽探與場址土壤試驗作業"><div class="pg-ov"></div><div class="pg-body"><div class="pg-loc">基礎設施 · 地質調查</div><div class="pg-name">基礎設施地質調查</div><div class="pg-desc">執行地質鑽探與土壤試驗，提供基礎設計建議。</div><div class="pg-tags"><span class="ptag">地質鑽探</span><span class="ptag">基礎調查</span></div></div></div>
-    <div class="pg-card" data-cat="government"><img loading="lazy"  src="img/proj_energy.jpg" alt="能源局地熱資源調查計畫——全國地熱潛勢資源評估"><div class="pg-ov"></div><div class="pg-body"><div class="pg-loc">公部門 · 資源調查</div><div class="pg-name">能源局地熱資源調查計畫</div><div class="pg-desc">協助政府部門執行全國地熱資源調查與評估工作。</div><div class="pg-tags"><span class="ptag">公部門</span><span class="ptag">資源調查</span></div></div></div>
+    <div class="pg-card" data-cat="government"><img loading="lazy"  src="img/proj_energy.jpg" alt="能源局地熱資源調查計畫——全國地熱潛勢資源評估"><div class="pg-ov"></div><div class="pg-body"><div class="pg-loc">公部門 · 資源調查</div><div class="pg-name">地礦中心地熱資源調查計畫</div><div class="pg-desc">協助政府部門執行全國地熱資源調查與評估工作。</div><div class="pg-tags"><span class="ptag">公部門</span><span class="ptag">資源調查</span></div></div></div>
     <div class="pg-card" data-cat="government"><img loading="lazy"  src="img/proj_disaster.jpg" alt="地方政府地質災害評估——地質災害潛勢調查與防災規劃"><div class="pg-ov"></div><div class="pg-body"><div class="pg-loc">公部門 · 防災規劃</div><div class="pg-name">地方政府地質災害評估</div><div class="pg-desc">協助地方政府進行地質災害潛勢評估與防災規劃。</div><div class="pg-tags"><span class="ptag">公部門</span><span class="ptag">災害評估</span></div></div></div>
+  </div>
+</section>
+<section class="cred-sec">
+  <div class="cred-geo">
+    <div>
+      <div class="glabel">Track Record</div>
+      <h2 class="cred-geo-title">地熱開發、地質調查及工程地質相關實績</h2>
+    </div>
+    <div>
+      <p>具多年地熱資源探勘、地質調查、鑽探規劃及工程地質評估經驗，曾參與政府機關、研究單位及民間企業多項地熱與工程地質計畫。主要工作內容涵蓋地熱鑽探規劃與管理、地熱資源評估、地下地質構造分析、活動斷層調查及工程地質安全評估等。</p>
+    </div>
+  </div>
+
+  <div class="cred-grp">
+    <div class="cred-grp-h"><span class="t">地熱探勘與鑽探計畫</span></div>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="client">地礦中心</div>
+        <div class="ct">臺灣北部金山萬里地區深層地質鑽探與資料分析計畫</div>
+        <div class="chips"><span>2026～執行中</span><span class="role">協同主持人</span></div>
+        <div class="cd">負責深層地質鑽探成果整合、地熱地質分析及資料解釋工作。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">中興社</div>
+        <div class="ct">地熱探勘地質調查技術編製暨地熱鑽探指引研擬計畫</div>
+        <div class="chips"><span>2026～執行中</span><span class="role">協同主持人</span></div>
+        <div class="cd">負責地熱地質調查技術標準及鑽探作業指引研擬。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">倍速羅得公司</div>
+        <div class="ct">瑞穗、延平、廬山及金山等地熱開發案場之地質調查與地熱開發規劃工作</div>
+        <div class="chips"><span>2019～2025</span><span class="role">計畫管理</span></div>
+        <div class="cd">負責計畫管理、地質評估及開發策略規劃。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">倍速羅得公司</div>
+        <div class="ct">瑞穗地區地熱示範獎勵計畫申請案</div>
+        <div class="chips"><span>2020～2021</span><span class="role">分項負責人</span></div>
+        <div class="cd">擔任計畫管理及分項負責人，協助地熱開發計畫申請與技術規劃。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">工研院</div>
+        <div class="ct">地熱地質圖繪製技術訓練課程</div>
+        <div class="chips"><span>2025～2026</span><span class="role">課程講師</span></div>
+        <div class="cd">講授地熱地質調查及地質圖資判釋技術。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">中興社</div>
+        <div class="ct">瑞林岩樣紀錄與鑽井資料檢核、井深查核工作</div>
+        <div class="chips"><span>2025～執行中</span><span class="role">簽證技師</span></div>
+        <div class="cd">負責鑽井資料審查及成果驗證。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cred-grp">
+    <div class="cred-grp-h"><span class="t">地質調查與安全評估</span></div>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="client">國家災害防救科技中心</div>
+        <div class="ct">地下三維構造模型建置計畫</div>
+        <div class="chips"><span>2018～2019</span><span class="role">分項負責人</span></div>
+        <div class="cd">執行地下地質構造分析及三維地質模型建置。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cred-grp">
+    <div class="cred-grp-h"><span class="t">工程地質與活動斷層安全評估</span></div>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="client">海洋委員會海巡署東部分署</div>
+        <div class="ct">七星潭安檢所增建工程活動斷層地質敏感區基地地質調查</div>
+        <div class="cd">負責地質調查與活動斷層安全評估。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">高雄市政府經濟發展局</div>
+        <div class="ct">高雄市金屬扣件物流倉儲產業園區申請設置計畫</div>
+        <div class="cd">負責阿蓮區倉儲產業園區地質安全評估。由於小崗山活動斷層通過該區域，規劃多孔地質鑽探以確認活動斷層位置。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">台灣電力公司 ／ 交通部觀光局</div>
+        <div class="ct">高屏電廠六龜機組一號隧道修復工程及寶來鉅鹿吊橋功能性檢討</div>
+        <div class="cd">負責區域地質調查評估，並規劃地電阻與透地雷達非破壞性探測，針對橋墩地基提供地質研判分析報告。</div>
+      </div>
+      <div class="cred-card">
+        <div class="client">豐宇綠能</div>
+        <div class="ct">三金萬里地熱發電地質鑽探計畫</div>
+        <div class="chips"><span>2026～執行中</span><span class="role">計畫主持人</span></div>
+        <div class="cd">負責鑽探規劃、施工管理。</div>
+      </div>
+    </div>
   </div>
 </section>
 <footer>
