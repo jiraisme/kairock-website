@@ -23,9 +23,8 @@
 <style>
 /* HERO */
 .hero{min-height:85vh;position:relative;overflow:hidden;display:flex;align-items:center;background:#181b21;}
-.hero-bg{position:absolute;inset:0;background-image:url('img/hero_bg.jpg');background-size:cover;background-position:center 22%;transform-origin:center;filter:brightness(1.08) saturate(1.08) contrast(1.0);animation:hzoom 28s ease-in-out infinite alternate;}
+.hero-bg{position:absolute;inset:0;background-image:url('img/hero_bg.jpg');background-size:cover;background-position:center 22%;transform-origin:center;filter:brightness(1.08) saturate(1.08) contrast(1.0);transform:scaleX(-1);}
 .hero-bg-fb{position:absolute;inset:0;background:linear-gradient(135deg,#1a2535 0%,#243040 50%,#1a2535 100%);z-index:0;}
-@keyframes hzoom{from{transform:scaleX(-1.04) scaleY(1.04);}to{transform:scaleX(-1.07) scaleY(1.07);}}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(15,20,32,0.40) 0%,rgba(15,20,32,0.18) 50%,rgba(15,20,32,0.03) 100%),linear-gradient(to top,rgba(15,20,32,0.28) 0%,transparent 42%);}
 .hero-grid{position:absolute;inset:0;z-index:1;opacity:0.025;background-image:linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px);background-size:72px 72px;}
 .hero-content{position:relative;z-index:2;padding:104px 7% 32px;max-width:740px;}
