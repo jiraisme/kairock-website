@@ -25,22 +25,22 @@
 .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;max-width:1100px;margin:0 auto 80px;}
 .intro-label{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:10px;}
 .intro-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;letter-spacing:-0.5px;line-height:1.05;color:var(--deep);margin-bottom:20px;}
-.intro-rule{width:36px;height:2px;background:var(--deep);margin-bottom:22px;}
+.intro-rule{width:36px;height:2px;background:var(--accent);margin-bottom:22px;}
 .intro-p{font-weight:400;font-size:0.95rem;line-height:1.95;color:var(--muted);margin-bottom:16px;}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:28px;}
-.stat-box-d{background:var(--deep);padding:30px 24px;}
-.stat-box-l{background:var(--bg);padding:30px 24px;}
+.stat-box-d{background:#F4F5F6;padding:30px 24px;}
+.stat-box-l{background:var(--bg);padding:30px 24px;border:1px solid var(--border);}
 .stat-n{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.6rem;line-height:1;margin-bottom:5px;}
-.stat-box-d .stat-n{color:#fff;}
-.stat-box-l .stat-n{color:var(--deep);}
+.stat-box-d .stat-n{color:var(--accent);}
+.stat-box-l .stat-n{color:var(--accent);}
 .stat-lbl{font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;}
-.stat-box-d .stat-lbl{color:var(--light);}
+.stat-box-d .stat-lbl{color:var(--mid);}
 .stat-box-l .stat-lbl{color:var(--mid);}
 .co-info{font-size:0.85rem;font-weight:400;color:var(--muted);line-height:1.8;}
 /* Landscape banner */
 .landscape-banner{position:relative;overflow:hidden;height:380px;background:var(--dark);max-width:1100px;margin:0 auto;}
-.landscape-banner img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(10%);}
-.landscape-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(20,23,32,0.65) 0%,rgba(20,23,32,0.1) 60%);}
+.landscape-banner img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(1.28) saturate(1.05);}
+.landscape-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(20,23,32,0.42) 0%,rgba(20,23,32,0.04) 60%);}
 .landscape-quote{position:absolute;bottom:0;left:0;right:0;padding:32px 40px;}
 .landscape-quote p{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:300;font-size:1.15rem;color:rgba(255,255,255,0.72);max-width:520px;line-height:1.55;}
 /* VALUES */
@@ -49,19 +49,19 @@
 .values-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--deep);margin-bottom:12px;}
 .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1100px;margin:0 auto;}
 .v-card{background:#fff;padding:34px 28px;border-top:2px solid var(--border);transition:0.25s;}
-.v-card:hover{border-color:var(--deep);}
+.v-card:hover{background:#F4F5F6;border-top-color:var(--accent);}
 .v-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--border);margin-bottom:12px;line-height:1;}
 .v-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--deep);margin-bottom:7px;}
 .v-card p{font-size:0.86rem;color:var(--muted);line-height:1.7;font-weight:400;}
 /* FOUNDER */
-.founder-sec{background:var(--deep);padding:clamp(68px,9vw,128px) 6%;}
+.founder-sec{background:#F4F5F6;padding:clamp(68px,9vw,128px) 6%;}
 .founder-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;}
-.founder-label{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--light);display:block;margin-bottom:10px;}
-.founder-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.4rem);text-transform:uppercase;color:#fff;margin-bottom:16px;}
-.founder-rule{width:36px;height:2px;background:var(--light);margin:0 0 22px;}
-.founder-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.7rem;color:#fff;letter-spacing:1px;margin-bottom:3px;}
-.founder-role{font-size:0.75rem;color:var(--light);letter-spacing:2px;text-transform:uppercase;font-family:'Barlow Condensed',sans-serif;margin-bottom:22px;}
-.founder-p{font-weight:400;font-size:0.93rem;line-height:1.9;color:rgba(255,255,255,0.55);margin-bottom:14px;}
+.founder-label{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:10px;}
+.founder-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.4rem);text-transform:uppercase;color:var(--text);margin-bottom:16px;}
+.founder-rule{width:36px;height:2px;background:var(--accent);margin:0 0 22px;}
+.founder-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.7rem;color:var(--text);letter-spacing:1px;margin-bottom:3px;}
+.founder-role{font-size:0.75rem;color:var(--mid);letter-spacing:2px;text-transform:uppercase;font-family:'Barlow Condensed',sans-serif;margin-bottom:22px;}
+.founder-p{font-weight:400;font-size:0.93rem;line-height:1.9;color:var(--muted);margin-bottom:14px;}
 /* TECH METHODS */
 .tech-sec{padding:clamp(68px,9vw,128px) 6%;}
 .tech-hdr{text-align:center;margin-bottom:52px;}
@@ -72,15 +72,6 @@
 .tc p{font-size:0.84rem;color:var(--muted);line-height:1.65;font-weight:400;}
 @media(max-width:900px){.intro-grid,.founder-inner{grid-template-columns:1fr;gap:40px;}.values-grid{grid-template-columns:1fr 1fr;}.tech-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:560px){.values-grid,.tech-grid{grid-template-columns:1fr;}}
-.pub-sec{padding:clamp(68px,9vw,128px) 6%;background:#f8f7f4;}
-.pub-inner{max-width:860px;margin:0 auto;}
-.pub-hdr{text-align:center;margin-bottom:40px;}
-.pub-sub{font-size:0.93rem;color:var(--muted);line-height:1.8;text-align:center;}
-.pub-list{list-style:none;padding-left:0;counter-reset:pub-counter;}
-.pub-list li{font-size:0.88rem;color:var(--muted);line-height:1.85;margin-bottom:16px;padding-left:2.2em;position:relative;counter-increment:pub-counter;}
-.pub-list li::before{content:counter(pub-counter) ".";position:absolute;left:0;color:var(--deep);font-weight:600;font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;}
-.pub-list li strong{color:var(--deep);}
-@media(max-width:680px){.pub-sec{padding:60px 6%;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5F2FSPGDX"></script>
@@ -118,7 +109,7 @@
 <body>
 <nav>
   <a href="index.html" class="nav-logo">
-    <img class="nav-logo-img" src="logo.png" alt="KaiRock">
+    <img class="nav-logo-img" src="favicon.png" alt="KaiRock">
     <div class="nav-logo-text"><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
   </a>
   <div class="nav-links" id="navLinks">
@@ -132,7 +123,7 @@
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
 
-<div class="page-hero" style="background:linear-gradient(rgba(34,38,47,0.80),rgba(34,38,47,0.88)),url('img/technical_hero.jpg') center 55%/cover;">
+<div class="page-hero" style="background:linear-gradient(100deg,rgba(18,24,34,0.50) 0%,rgba(18,24,34,0.32) 48%,rgba(18,24,34,0.10) 100%),url('img/technical_hero.jpg') center 55%/cover;">
   <div class="sec-label">About KaiRock</div>
   <h1>關於<br>凱岩工程顧問</h1>
   <p>專注地熱資源評估與工程地質顧問，依循國際標準提供全方位技術服務。</p>
@@ -168,7 +159,7 @@
   <div class="values-hdr">
     <span class="intro-label" style="text-align:center;display:block;">Core Values</span>
     <h2 class="values-h">核心價值</h2>
-    <div style="width:36px;height:2px;background:var(--deep);margin:0 auto;"></div>
+    <div style="width:36px;height:2px;background:var(--accent);margin:0 auto;"></div>
   </div>
   <div class="values-grid">
     <div class="v-card"><div class="v-num">01</div><h3>專業</h3><p>整合地質、地球物理、地球化學等多領域專業技術，提供高品質服務。</p></div>
@@ -201,7 +192,7 @@
   <div class="tech-hdr">
     <span class="intro-label" style="text-align:center;display:block;">Technical Approach</span>
     <h2 class="values-h">技術方法</h2>
-    <div style="width:36px;height:2px;background:var(--deep);margin:12px auto 0;"></div>
+    <div style="width:36px;height:2px;background:var(--accent);margin:12px auto 0;"></div>
   </div>
   <div class="tech-grid">
     <div class="tc"><h4>地質調查</h4><p>地表地質調查與分析，精準掌握地層分布與構造特性。</p></div>
@@ -211,52 +202,12 @@
   </div>
 </div>
 
-<!-- 研究發表 -->
-<div class="pub-sec">
-  <div class="pub-inner">
-    <div class="pub-hdr">
-      <span class="sec-label">Research & Publications</span>
-      <h2 class="values-h">研究發表</h2>
-      <div class="founder-rule" style="margin-left:auto;margin-right:auto;"></div>
-      <p class="pub-sub">凱岩創辦人林義凱長期投入地質構造與地熱研究，具備豐厚學術底蘊與實務整合能力。</p>
-    </div>
-    <ol class="pub-list">
-      <li>陳文山、吳逸民、賴奕修、葉柏逸、柯明淳、柯孝勳、<strong>林義凱</strong>，2018，花東縱谷碰撞帶的地體構造意義：震波層析成像與地震特性研究，2018 台灣地球科學聯合學術研討會，嘉義。</li>
-      <li>柯明淳、<strong>林義凱</strong>、黃明偉、陳文山、賴奕修、葉柏逸，2018，透過斷層地下三維構造資料輔助地震事件之研判－以 0206 花蓮地震為例，2018 台灣地球科學聯合學術研討會，嘉義。</li>
-      <li><strong>林義凱</strong>、柯明淳、楊耿明、何曄，2018，台灣西南部地區活動斷層三維數值模型建置之初步研究，2018 台灣地球科學聯合學術研討會，嘉義。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2018，利用斷層三維模型分析地震災損－以車籠埔斷層為例，第 17 屆離島資訊技術與應用研討會，澎湖。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2018，台灣西南地區活動斷層與東部隱沒帶地下構造之三維數值模型建置，國家災害防救科技中心－災害防救電子報，第 154 期。</li>
-      <li>黃俊鴻、盧志杰、郭俊翔、王仁佐、<strong>林義凱</strong>，2018，2016 紐西蘭 Kaikoura 地震勘災摘要報告，地工技術 No.156。</li>
-      <li><strong>林義凱</strong>、劉淑燕、柯明淳，2017，利用三維構造模型評估地震導致地表變形之初步研究，2017 台灣地球科學聯合學術研討會，臺南。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2017，利用活動斷層地下三維模型模擬地震災害影響－以新竹地區為例，第 36 屆空間資訊研討會，臺南。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2017，利用 SKUA-GOCAD 及 GIS 系統建置地下三維斷層模型－以車籠埔斷層為例，國家災害防救科技中心災害防救電子報第 142 期。</li>
-      <li><strong>林義凱</strong>、楊耿明、何曄、楊志成、賴光胤、柯明淳、陳文山、吳逸民、賴奕修、葉柏逸、柯孝勳，2017，台灣西南部及東半部地區活動斷層三維數值模型建置，國家災害防救科技中心 106 年技術報告，NCDR 106-A20。</li>
-    </ol>
-
-    <div style="margin-top:52px;">
-      <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;color:var(--deep);letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;border-top:1px solid var(--border);padding-top:32px;">地熱及工程相關實績</h3>
-      <p class="pub-sub" style="text-align:left;margin-bottom:20px;">「新北－金山」、「花蓮－瑞穗」、「南投－廬山」、「台東－延平」、「苗栗－泰安」等地熱潛勢區之地質調查與開發規劃，包含區域地質調查與分析、地熱資源商業評估、地熱示範獎勵申請、地熱鑽井現場管理與地質研判。</p>
-      <div style="display:flex;flex-direction:column;gap:14px;">
-        <div style="padding:16px 20px;background:#fff;border-left:3px solid var(--deep);">
-          <p style="font-size:0.86rem;color:var(--muted);line-height:1.75;"><strong style="color:var(--deep);">海洋委員會海巡署東部分署</strong>｜七星潭安檢所增建工程活動斷層地質敏感區基地地質調查，負責地質調查與活動斷層安全評估。</p>
-        </div>
-        <div style="padding:16px 20px;background:#fff;border-left:3px solid var(--deep);">
-          <p style="font-size:0.86rem;color:var(--muted);line-height:1.75;"><strong style="color:var(--deep);">高雄市政府經濟發展局</strong>｜高雄市金屬扣件物流倉儲產業園區申請設置計畫，負責阿蓮區倉儲產業園區地質安全評估。由於小崗山活動斷層通過該區域，規劃多孔地質鑽探以確認活動斷層位置。</p>
-        </div>
-        <div style="padding:16px 20px;background:#fff;border-left:3px solid var(--deep);">
-          <p style="font-size:0.86rem;color:var(--muted);line-height:1.75;"><strong style="color:var(--deep);">台灣電力公司 ／ 交通部觀光局</strong>｜高屏電廠六龜機組一號隧道修復工程及寶來鉅鹿吊橋功能性檢討，負責區域地質調查評估，並規劃地電阻與透地雷達非破壞性探測，針對橋墩地基提供地質研判分析報告。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo-row">
-          <img class="footer-logo-img" src="logo.png" alt="KaiRock">
+          <img class="footer-logo-img" src="favicon.png" alt="KaiRock">
           <div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
         </div>
         <p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p>

@@ -23,12 +23,12 @@
 .svc-intro{max-width:620px;margin:0 auto 70px;text-align:center;}
 .svc-intro-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--deep);margin-bottom:12px;}
 .svc-intro-lbl{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:10px;}
-.svc-intro-rule{width:36px;height:2px;background:var(--deep);margin:14px auto 20px;}
+.svc-intro-rule{width:36px;height:2px;background:var(--accent);margin:14px auto 20px;}
 .svc-intro p{font-weight:400;font-size:0.93rem;color:var(--muted);line-height:1.8;}
 .svc-list{display:flex;flex-direction:column;}
 .svc-item{display:grid;grid-template-columns:160px 1fr;border-top:1px solid var(--border);transition:background 0.2s;}
 .svc-item:last-child{border-bottom:1px solid var(--border);}
-.svc-item:hover{background:var(--bg);}
+.svc-item:hover{background:#F4F5F6;}
 .svc-num-col{padding:44px 28px;display:flex;align-items:flex-start;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.8rem;color:var(--border);line-height:1;border-right:1px solid var(--border);transition:color 0.2s;}
 .svc-item:hover .svc-num-col{color:var(--mid);}
 .svc-body{padding:44px 48px;}
@@ -42,12 +42,12 @@
 .detail-block li:last-child{border-bottom:none;}
 .detail-block li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:4px;height:4px;border-radius:50%;background:var(--mid);}
 .svc-val{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;color:var(--deep);padding:12px 0;border-top:1px solid var(--border);}
-.svc-cta{background:var(--deep);padding:clamp(64px,7vw,104px) 6%;}
+.svc-cta{background:#F4F5F6;padding:clamp(64px,7vw,104px) 6%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .svc-cta-inner{max-width:720px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:28px;}
-.svc-cta-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;color:#fff;}
-.svc-cta-p{font-size:0.92rem;color:rgba(255,255,255,0.62);line-height:1.7;margin-top:10px;max-width:520px;}
-.svc-cta a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;padding:14px 36px;background:var(--light);color:var(--deep);text-decoration:none;transition:0.2s;}
-.svc-cta a:hover{background:#fff;}
+.svc-cta-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;color:var(--text);}
+.svc-cta-p{font-size:0.92rem;color:var(--muted);line-height:1.7;margin-top:10px;max-width:520px;}
+.svc-cta a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;padding:14px 36px;background:var(--accent);color:#fff;text-decoration:none;transition:0.2s;}
+.svc-cta a:hover{background:var(--accent-dark);}
 @media(max-width:768px){.svc-item{grid-template-columns:1fr;}.svc-num-col{padding:22px 20px;border-right:none;border-bottom:1px solid var(--border);font-size:2rem;}.svc-body{padding:28px 20px;}.detail-cols{grid-template-columns:1fr;}.svc-cta-inner{flex-direction:column;align-items:flex-start;}}
 </style>
 <!-- Google tag (gtag.js) -->
@@ -86,7 +86,7 @@
 <body>
 <nav>
   <a href="index.html" class="nav-logo">
-    <img class="nav-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'">
+    <img class="nav-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'">
     <div class="nav-logo-text"><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
   </a>
   <div class="nav-links" id="navLinks">
@@ -99,7 +99,7 @@
   </div>
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
-<div class="page-hero" style="background:linear-gradient(rgba(34,38,47,0.78),rgba(34,38,47,0.86)),url('img/services_hero.jpg') center 45%/cover;"><div class="sec-label">Our Services</div><h1>服務項目</h1><p>全方位地熱開發與工程地質顧問服務，提供從探勘到開發管理的完整解決方案。</p></div>
+<div class="page-hero" style="background:linear-gradient(100deg,rgba(18,24,34,0.50) 0%,rgba(18,24,34,0.32) 48%,rgba(18,24,34,0.10) 100%),url('img/integration_bg.jpg') center 50%/cover;"><div class="sec-label">Our Services</div><h1>服務項目</h1><p>全方位地熱開發與工程地質顧問服務，提供從探勘到開發管理的完整解決方案。</p></div>
 <section style="padding:0 6%;"><div class="svc-wrap">
   <div class="svc-intro">
     <span class="svc-intro-lbl">Six Service Areas</span>
@@ -122,7 +122,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo-row">
-          <img class="footer-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'">
+          <img class="footer-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'">
           <div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
         </div>
         <p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p>
