@@ -39,7 +39,7 @@
 @media(max-width:900px){.pg-grid{grid-template-columns:1fr 1fr;}.pg-card.wide{grid-column:span 2;}}
 @media(max-width:560px){.pg-grid{grid-template-columns:1fr;}.pg-card.wide{grid-column:span 1;aspect-ratio:4/3;}}
 /* === 實績區（Track Record） === */
-.cred-sec{padding:clamp(68px,9vw,120px) 6%;background:var(--bg);border-top:1px solid var(--border);}
+.cred-sec{padding:clamp(68px,9vw,120px) 6%;background:#F4F5F6;border-top:1px solid var(--border);}
 .cred-h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.7rem,3.5vw,2.6rem);color:var(--deep);line-height:1.15;margin-bottom:18px;}
 .cred-intro{max-width:840px;font-size:0.95rem;line-height:2;color:var(--muted);margin-bottom:56px;}
 .cred-grp{margin-bottom:50px;}
@@ -48,13 +48,13 @@
 .cred-grp-h .t{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:1px;color:var(--deep);}
 .cred-grp-h .n{font-size:0.72rem;font-weight:500;color:var(--mid);letter-spacing:1px;}
 .cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.cred-card{background:var(--white);padding:28px 26px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;}
-.cred-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(60,66,79,0.10);}
+.cred-card{background:#ffffff;padding:28px 26px;display:flex;flex-direction:column;border:1px solid var(--border);border-top:2px solid transparent;transition:transform .25s,box-shadow .25s,border-top-color .25s;}
+.cred-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(91,151,200,0.14);border-top-color:var(--accent);}
 .cred-card .client{font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:1px;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:13px;line-height:1.5;}
 .cred-card .ct{font-weight:600;font-size:1.12rem;color:var(--text);line-height:1.55;margin-bottom:13px;}
 .cred-card .chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px;}
-.cred-card .chips span{font-family:'Barlow Condensed',sans-serif;font-size:0.76rem;letter-spacing:0.5px;color:var(--mid);background:var(--bg);padding:3px 11px;}
-.cred-card .chips span.role{color:var(--deep);font-weight:700;background:transparent;padding-left:0;}
+.cred-card .chips span{font-family:'Barlow Condensed',sans-serif;font-size:0.76rem;letter-spacing:0.5px;color:var(--mid);background:#ECEEF1;padding:3px 11px;}
+.cred-card .chips span.role{color:var(--accent);font-weight:700;background:transparent;padding-left:0;}
 .cred-card .cd{font-size:0.93rem;color:var(--muted);line-height:1.85;margin-top:auto;}
 /* 地熱潛勢區總覽橫幅 */
 .cred-geo{margin:0 0 56px;background:var(--deep);color:#fff;padding:clamp(40px,4.5vw,58px) clamp(32px,4vw,56px);}
@@ -66,6 +66,16 @@
 .cred-geo p{font-size:0.92rem;line-height:2;color:rgba(255,255,255,0.82);max-width:780px;}
 @media(max-width:900px){.cred-grid{grid-template-columns:1fr 1fr;}.cred-geo{grid-template-columns:1fr;gap:26px;}}
 @media(max-width:560px){.cred-grid{grid-template-columns:1fr;}}
+/* 研究發表 */
+.pub-sec{padding:clamp(68px,9vw,128px) 6%;background:var(--bg);border-top:1px solid var(--border);}
+.pub-inner{max-width:860px;margin:0 auto;}
+.pub-hdr{text-align:center;margin-bottom:40px;}
+.pub-sub{font-size:0.93rem;color:var(--muted);line-height:1.8;text-align:center;}
+.pub-list{list-style:none;padding-left:0;counter-reset:pub-counter;}
+.pub-list li{font-size:0.88rem;color:var(--muted);line-height:1.85;margin-bottom:16px;padding-left:2.2em;position:relative;counter-increment:pub-counter;}
+.pub-list li::before{content:counter(pub-counter) ".";position:absolute;left:0;color:var(--deep);font-weight:600;font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;}
+.pub-list li strong{color:var(--deep);}
+@media(max-width:680px){.pub-sec{padding:60px 6%;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5F2FSPGDX"></script>
@@ -103,7 +113,7 @@
 <body>
 <nav>
   <a href="index.html" class="nav-logo">
-    <img class="nav-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'">
+    <img class="nav-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'">
     <div class="nav-logo-text"><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
   </a>
   <div class="nav-links" id="navLinks">
@@ -116,7 +126,7 @@
   </div>
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
-<div class="page-hero"><div class="sec-label">Selected Projects</div><h1>專案實績</h1><p>豐富的地熱資源調查與工程地質評估專案經驗，遍布台灣各地熱潛勢區域。</p></div>
+<div class="page-hero" style="background:linear-gradient(100deg,rgba(18,24,34,0.60) 0%,rgba(18,24,34,0.40) 50%,rgba(18,24,34,0.18) 100%),url('img/proj_jinshan.jpg') center 55%/cover;"><div class="sec-label">Selected Projects</div><h1>專案實績</h1><p>豐富的地熱資源調查與工程地質評估專案經驗，遍布台灣各地熱潛勢區域。</p></div>
 <section class="proj-sec">
   <div class="filter-bar" id="filterBar">
     <button class="ftab active" onclick="filter('all',this)">全部專案</button>
@@ -228,12 +238,34 @@
     </div>
   </div>
 </section>
+<div class="pub-sec">
+  <div class="pub-inner">
+    <div class="pub-hdr">
+      <span class="sec-label">Research &amp; Publications</span>
+      <h2 class="cred-h2">研究發表</h2>
+      <div style="width:36px;height:2px;background:var(--accent);margin:12px auto 20px;"></div>
+      <p class="pub-sub">凱岩創辦人林義凱長期投入地質構造與地熱研究，具備豐厚學術底蘊與實務整合能力。</p>
+    </div>
+    <ol class="pub-list">
+      <li>陳文山、吳逸民、賴奕修、葉柏逸、柯明淳、柯孝勳、<strong>林義凱</strong>，2018，花東縱谷碰撞帶的地體構造意義：震波層析成像與地震特性研究，2018 台灣地球科學聯合學術研討會，嘉義。</li>
+      <li>柯明淳、<strong>林義凱</strong>、黃明偉、陳文山、賴奕修、葉柏逸，2018，透過斷層地下三維構造資料輔助地震事件之研判－以 0206 花蓮地震為例，2018 台灣地球科學聯合學術研討會，嘉義。</li>
+      <li><strong>林義凱</strong>、柯明淳、楊耿明、何曄，2018，台灣西南部地區活動斷層三維數值模型建置之初步研究，2018 台灣地球科學聯合學術研討會，嘉義。</li>
+      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2018，利用斷層三維模型分析地震災損－以車籠埔斷層為例，第 17 屆離島資訊技術與應用研討會，澎湖。</li>
+      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2018，台灣西南地區活動斷層與東部隱沒帶地下構造之三維數值模型建置，國家災害防救科技中心－災害防救電子報，第 154 期。</li>
+      <li>黃俊鴻、盧志杰、郭俊翔、王仁佐、<strong>林義凱</strong>，2018，2016 紐西蘭 Kaikoura 地震勘災摘要報告，地工技術 No.156。</li>
+      <li><strong>林義凱</strong>、劉淑燕、柯明淳，2017，利用三維構造模型評估地震導致地表變形之初步研究，2017 台灣地球科學聯合學術研討會，臺南。</li>
+      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2017，利用活動斷層地下三維模型模擬地震災害影響－以新竹地區為例，第 36 屆空間資訊研討會，臺南。</li>
+      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2017，利用 SKUA-GOCAD 及 GIS 系統建置地下三維斷層模型－以車籠埔斷層為例，國家災害防救科技中心災害防救電子報第 142 期。</li>
+      <li><strong>林義凱</strong>、楊耿明、何曄、楊志成、賴光胤、柯明淳、陳文山、吳逸民、賴奕修、葉柏逸、柯孝勳，2017，台灣西南部及東半部地區活動斷層三維數值模型建置，國家災害防救科技中心 106 年技術報告，NCDR 106-A20。</li>
+    </ol>
+  </div>
+</div>
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo-row">
-          <img class="footer-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'">
+          <img class="footer-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'">
           <div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
         </div>
         <p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p>

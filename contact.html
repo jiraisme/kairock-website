@@ -21,16 +21,17 @@
 <style>
 .c-sec{padding:clamp(68px,9vw,120px) 6%;}
 .c-wrap{display:grid;grid-template-columns:1fr 1.5fr;max-width:1100px;margin:0 auto;}
-.c-left{background:#F4F5F6;padding:60px 50px;}
-.c-left-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,2.5vw,2rem);text-transform:uppercase;color:var(--text);margin-bottom:36px;line-height:1.1;}
+.c-left{background:var(--deep);padding:60px 50px;}
+.c-left-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.5rem,2.5vw,2rem);text-transform:uppercase;color:#ffffff;margin-bottom:36px;line-height:1.1;}
 .c-blk{margin-bottom:26px;}
-.c-lbl{font-family:'Barlow Condensed',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:7px;}
-.c-val{color:var(--text);font-size:0.93rem;line-height:1.7;font-weight:400;}
-.c-val a{color:var(--accent);text-decoration:none;}
-.c-hours{border:1px solid var(--border);padding:20px 22px;margin-top:32px;}
-.c-hours h4{font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-bottom:10px;}
-.c-hours p{font-size:0.86rem;color:var(--muted);margin-bottom:4px;font-weight:400;}
-.c-right{background:var(--bg);padding:60px 50px;}
+.c-lbl{font-family:'Barlow Condensed',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:2.8px;text-transform:uppercase;color:var(--silver);margin-bottom:8px;}
+.c-val{color:#ffffff;font-size:0.93rem;line-height:1.75;font-weight:400;}
+.c-val-s{color:rgba(255,255,255,0.55);font-size:0.82rem;font-weight:300;}
+.c-val a{color:rgba(255,255,255,0.82);text-decoration:none;}
+.c-hours{border:1px solid rgba(255,255,255,0.18);padding:20px 22px;margin-top:32px;}
+.c-hours h4{font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--silver);margin-bottom:10px;}
+.c-hours p{font-size:0.86rem;color:rgba(255,255,255,0.62);margin-bottom:4px;font-weight:400;}
+.c-right{background:#F4F5F6;padding:60px 50px;}
 .c-right-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;text-transform:uppercase;color:var(--deep);margin-bottom:6px;}
 .c-sub{font-size:0.86rem;color:var(--muted);margin-bottom:30px;font-weight:400;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
@@ -80,7 +81,7 @@
 <body>
 <nav>
   <a href="index.html" class="nav-logo">
-    <img class="nav-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'">
+    <img class="nav-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'">
     <div class="nav-logo-text"><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
   </a>
   <div class="nav-links" id="navLinks">
@@ -93,12 +94,12 @@
   </div>
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
-<div class="page-hero"><div class="sec-label">Contact Us</div><h1>聯絡我們</h1><p>歡迎洽詢地熱開發、工程地質相關服務，我們將盡快回覆您的需求。</p></div>
+<div class="page-hero" style="background:linear-gradient(100deg,rgba(18,24,34,0.50) 0%,rgba(18,24,34,0.32) 48%,rgba(18,24,34,0.10) 100%),url('img/about_field.jpg') center 40%/cover;"><div class="sec-label">Contact Us</div><h1>聯絡我們</h1><p>歡迎洽詢地熱開發、工程地質相關服務，我們將盡快回覆您的需求。</p></div>
 <section class="c-sec">
   <div class="c-wrap">
     <div class="c-left">
       <h2 class="c-left-h">讓我們為您的<br>地熱專案提供支援</h2>
-      <div class="c-blk"><div class="c-lbl">聯絡人</div><div class="c-val">林義凱 Kelvin Lin<br>應用地質技師</div></div>
+      <div class="c-blk"><div class="c-lbl">聯絡人</div><div class="c-val">林義凱 Kelvin Lin<br><span class="c-val-s">應用地質技師</span></div></div>
       <div class="c-blk"><div class="c-lbl">電話</div><div class="c-val"><a href="tel:0937120376">0937-120-376</a></div></div>
       <div class="c-blk"><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:kelvin.lin@kairock.com">kelvin.lin@kairock.com</a></div></div>
       <div class="c-blk"><div class="c-lbl">地址</div><div class="c-val">104 台北市中山區<br>南京東路1段15號3樓</div></div>
@@ -127,7 +128,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand"><div class="footer-logo-row"><img class="footer-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'"><div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div></div><p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p></div>
+      <div class="footer-brand"><div class="footer-logo-row"><img class="footer-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'"><div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div></div><p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p></div>
       <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">首頁</a></li><li><a href="about.html">關於我們</a></li><li><a href="services.html">服務項目</a></li><li><a href="projects.html">專案實績</a></li><li><a href="technical.html">技術能力</a></li><li><a href="contact.html">聯絡我們</a></li></ul></div>
       <div class="footer-col"><h4>Contact</h4><p>kelvin.lin@kairock.com</p><p style="margin-top:6px;">台北市中山區南京東路1段15號3樓</p><p style="margin-top:6px;">統編：60713196</p></div>
     </div>

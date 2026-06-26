@@ -19,25 +19,25 @@
 <meta name="twitter:description" content="凱岩技術核心涵蓋電阻率探測、重力磁力分析、地熱數值模擬、鑽井設計與儲層管理，以科學化方法確保地熱開發精準可靠。">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap"></noscript><link rel="stylesheet" href="shared.css">
 <style>
-.tech-sec{padding:clamp(68px,9vw,128px) 6%;}
+.tech-sec{padding:clamp(68px,9vw,128px) 6%;background:#F4F5F6;}
 .t-hdr{text-align:center;max-width:620px;margin:0 auto 60px;}
 .t-lbl{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:10px;}
 .t-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--deep);margin-bottom:12px;}
 .t-rule{width:36px;height:2px;background:var(--accent);margin:12px auto 20px;}
 .t-hdr p{font-weight:400;font-size:0.93rem;color:var(--muted);line-height:1.8;}
 .t-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:1200px;margin:0 auto;}
-.tc{background:var(--bg);padding:34px 24px;border-top:2px solid transparent;transition:0.25s;}
-.tc:hover{border-color:var(--deep);background:#fff;}
+.tc{background:#ffffff;padding:34px 24px;border-top:2px solid transparent;transition:0.25s;}
+.tc:hover{border-top-color:var(--accent);background:#fff;box-shadow:0 4px 16px rgba(91,151,200,0.12);}
 .tc-lbl{font-family:'Barlow Condensed',sans-serif;font-size:0.64rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--mid);margin-bottom:12px;display:block;}
 .tc h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--deep);margin-bottom:8px;}
 .tc p{font-size:0.84rem;color:var(--muted);line-height:1.7;font-weight:400;}
-.int-sec{background:linear-gradient(rgba(244,245,246,0.92),rgba(244,245,246,0.95)),url('img/integration_bg.jpg') center/cover;padding:clamp(68px,9vw,128px) 6%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.int-sec{background:linear-gradient(rgba(244,245,246,0.62),rgba(244,245,246,0.70)),url('img/integration_bg.jpg') center/cover;padding:clamp(68px,9vw,128px) 6%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .int-hdr{max-width:1200px;margin:0 auto 48px;}
 .int-lbl{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:10px;}
 .int-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--text);}
 .int-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1200px;margin:0 auto;}
-.ic{padding:40px 32px;border:1px solid var(--border);background:rgba(255,255,255,0.6);transition:0.25s;}
-.ic:hover{background:#fff;}
+.ic{padding:40px 32px;border:1px solid var(--border);background:rgba(255,255,255,0.82);transition:0.25s;}
+.ic:hover{background:rgba(255,255,255,0.97);box-shadow:0 4px 16px rgba(0,0,0,0.08);}
 .ic h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;color:var(--text);margin-bottom:10px;}
 .ic p{font-size:0.88rem;color:var(--muted);line-height:1.8;font-weight:400;}
 .proc-sec{background:var(--bg);padding:120px 6%;}
@@ -88,7 +88,7 @@
 <body>
 <nav>
   <a href="index.html" class="nav-logo">
-    <img class="nav-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'">
+    <img class="nav-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'">
     <div class="nav-logo-text"><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
   </a>
   <div class="nav-links" id="navLinks">
@@ -101,7 +101,7 @@
   </div>
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
-<div class="page-hero"><div class="sec-label">Technical Capabilities</div><h1>技術能力</h1><p>整合地質、地球物理、地球化學等多領域專業技術，運用先進分析方法提供精準解決方案。</p></div>
+<div class="page-hero" style="background:linear-gradient(100deg,rgba(18,24,34,0.50) 0%,rgba(18,24,34,0.32) 48%,rgba(18,24,34,0.10) 100%),url('img/technical_hero.jpg') center 50%/cover;"><div class="sec-label">Technical Capabilities</div><h1>技術能力</h1><p>整合地質、地球物理、地球化學等多領域專業技術，運用先進分析方法提供精準解決方案。</p></div>
 <section class="tech-sec">
   <div class="t-hdr"><span class="t-lbl">Core Technologies</span><h2 class="t-h">核心技術能力</h2><div class="t-rule"></div><p>從現場調查到數值模擬，凱岩工程顧問具備完整的技術能力，確保每個環節的專業品質。</p></div>
   <div class="t-grid">
@@ -146,7 +146,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand"><div class="footer-logo-row"><img class="footer-logo-img" src="logo.png" alt="KaiRock" onerror="this.src='logo.png'"><div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div></div><p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p></div>
+      <div class="footer-brand"><div class="footer-logo-row"><img class="footer-logo-img" src="favicon.png" alt="KaiRock" onerror="this.src='logo.png'"><div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div></div><p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p></div>
       <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">首頁</a></li><li><a href="about.html">關於我們</a></li><li><a href="services.html">服務項目</a></li><li><a href="projects.html">專案實績</a></li><li><a href="technical.html">技術能力</a></li><li><a href="contact.html">聯絡我們</a></li></ul></div>
       <div class="footer-col"><h4>Contact</h4><p>kelvin.lin@kairock.com</p><p style="margin-top:6px;">台北市中山區南京東路1段15號3樓</p><p style="margin-top:6px;">統編：60713196</p></div>
     </div>

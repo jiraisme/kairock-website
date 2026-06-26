@@ -15,7 +15,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:9999;height:72px;display:flex;al
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0;}
 .nav-logo-img{display:block;height:36px;width:36px;object-fit:contain;flex-shrink:0;}
 .nav-logo-text .en{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.3rem;color:var(--text);letter-spacing:3px;line-height:1;}
-.nav-logo-text .zh{font-size:0.78rem;color:var(--silver);letter-spacing:1px;margin-top:3px;font-weight:300;font-family:'Noto Sans TC',sans-serif;}
+.nav-logo-text .zh{font-size:0.78rem;color:#565B61;letter-spacing:1px;margin-top:3px;font-weight:400;font-family:'Noto Sans TC',sans-serif;}
 .nav-links{display:flex;flex-shrink:0;}
 .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:500;color:var(--mid);text-decoration:none;font-size:0.88rem;letter-spacing:1.5px;text-transform:uppercase;padding:0 13px;line-height:72px;display:block;transition:color 0.2s;border-bottom:2px solid transparent;border-top:2px solid transparent;white-space:nowrap;}
 .nav-links a:hover,.nav-links a.active{color:var(--accent);border-bottom-color:var(--accent);}
@@ -23,10 +23,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:9999;height:72px;display:flex;al
 .hamburger span{width:22px;height:1.5px;background:rgba(255,255,255,0.7);display:block;}
 
 /* PAGE HERO */
-.page-hero{padding:140px 6% 80px;background:var(--bg);position:relative;overflow:hidden;border-bottom:1px solid var(--border);}
-.page-hero .sec-label{color:var(--accent);}
-.page-hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,5vw,3.8rem);color:var(--text);line-height:1.05;margin-bottom:14px;text-transform:uppercase;}
-.page-hero p{color:var(--muted);font-size:0.95rem;max-width:540px;line-height:1.8;font-weight:300;}
+.page-hero{padding:140px 6% 80px;background:var(--bg);position:relative;overflow:hidden;}
+.page-hero .sec-label{color:#fff;opacity:1;font-weight:700;text-shadow:0 1px 10px rgba(0,0,0,0.55);}
+.page-hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,5vw,3.8rem);color:#fff;line-height:1.05;margin-bottom:14px;text-transform:uppercase;text-shadow:0 2px 16px rgba(8,12,20,0.55);}
+.page-hero p{color:rgba(255,255,255,0.92);font-size:0.95rem;max-width:540px;line-height:1.8;font-weight:300;text-shadow:0 1px 12px rgba(0,0,0,0.55);}
 
 /* TYPOGRAPHY */
 .sec-label{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:10px;}

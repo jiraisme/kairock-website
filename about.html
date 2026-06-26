@@ -39,8 +39,8 @@
 .co-info{font-size:0.85rem;font-weight:400;color:var(--muted);line-height:1.8;}
 /* Landscape banner */
 .landscape-banner{position:relative;overflow:hidden;height:380px;background:var(--dark);max-width:1100px;margin:0 auto;}
-.landscape-banner img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(10%);}
-.landscape-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(20,23,32,0.65) 0%,rgba(20,23,32,0.1) 60%);}
+.landscape-banner img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(1.28) saturate(1.05);}
+.landscape-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(20,23,32,0.42) 0%,rgba(20,23,32,0.04) 60%);}
 .landscape-quote{position:absolute;bottom:0;left:0;right:0;padding:32px 40px;}
 .landscape-quote p{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:300;font-size:1.15rem;color:rgba(255,255,255,0.72);max-width:520px;line-height:1.55;}
 /* VALUES */
@@ -49,7 +49,7 @@
 .values-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;color:var(--deep);margin-bottom:12px;}
 .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1100px;margin:0 auto;}
 .v-card{background:#fff;padding:34px 28px;border-top:2px solid var(--border);transition:0.25s;}
-.v-card:hover{border-color:var(--deep);}
+.v-card:hover{background:#F4F5F6;border-top-color:var(--accent);}
 .v-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--border);margin-bottom:12px;line-height:1;}
 .v-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--deep);margin-bottom:7px;}
 .v-card p{font-size:0.86rem;color:var(--muted);line-height:1.7;font-weight:400;}
@@ -72,15 +72,6 @@
 .tc p{font-size:0.84rem;color:var(--muted);line-height:1.65;font-weight:400;}
 @media(max-width:900px){.intro-grid,.founder-inner{grid-template-columns:1fr;gap:40px;}.values-grid{grid-template-columns:1fr 1fr;}.tech-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:560px){.values-grid,.tech-grid{grid-template-columns:1fr;}}
-.pub-sec{padding:clamp(68px,9vw,128px) 6%;background:#F4F5F6;}
-.pub-inner{max-width:860px;margin:0 auto;}
-.pub-hdr{text-align:center;margin-bottom:40px;}
-.pub-sub{font-size:0.93rem;color:var(--muted);line-height:1.8;text-align:center;}
-.pub-list{list-style:none;padding-left:0;counter-reset:pub-counter;}
-.pub-list li{font-size:0.88rem;color:var(--muted);line-height:1.85;margin-bottom:16px;padding-left:2.2em;position:relative;counter-increment:pub-counter;}
-.pub-list li::before{content:counter(pub-counter) ".";position:absolute;left:0;color:var(--deep);font-weight:600;font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;}
-.pub-list li strong{color:var(--deep);}
-@media(max-width:680px){.pub-sec{padding:60px 6%;}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5F2FSPGDX"></script>
@@ -118,7 +109,7 @@
 <body>
 <nav>
   <a href="index.html" class="nav-logo">
-    <img class="nav-logo-img" src="logo.png" alt="KaiRock">
+    <img class="nav-logo-img" src="favicon.png" alt="KaiRock">
     <div class="nav-logo-text"><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
   </a>
   <div class="nav-links" id="navLinks">
@@ -132,7 +123,7 @@
   <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
 
-<div class="page-hero">
+<div class="page-hero" style="background:linear-gradient(100deg,rgba(18,24,34,0.50) 0%,rgba(18,24,34,0.32) 48%,rgba(18,24,34,0.10) 100%),url('img/technical_hero.jpg') center 55%/cover;">
   <div class="sec-label">About KaiRock</div>
   <h1>關於<br>凱岩工程顧問</h1>
   <p>專注地熱資源評估與工程地質顧問，依循國際標準提供全方位技術服務。</p>
@@ -211,36 +202,12 @@
   </div>
 </div>
 
-<!-- 研究發表 -->
-<div class="pub-sec">
-  <div class="pub-inner">
-    <div class="pub-hdr">
-      <span class="sec-label">Research & Publications</span>
-      <h2 class="values-h">研究發表</h2>
-      <div class="founder-rule" style="margin-left:auto;margin-right:auto;"></div>
-      <p class="pub-sub">凱岩創辦人林義凱長期投入地質構造與地熱研究，具備豐厚學術底蘊與實務整合能力。</p>
-    </div>
-    <ol class="pub-list">
-      <li>陳文山、吳逸民、賴奕修、葉柏逸、柯明淳、柯孝勳、<strong>林義凱</strong>，2018，花東縱谷碰撞帶的地體構造意義：震波層析成像與地震特性研究，2018 台灣地球科學聯合學術研討會，嘉義。</li>
-      <li>柯明淳、<strong>林義凱</strong>、黃明偉、陳文山、賴奕修、葉柏逸，2018，透過斷層地下三維構造資料輔助地震事件之研判－以 0206 花蓮地震為例，2018 台灣地球科學聯合學術研討會，嘉義。</li>
-      <li><strong>林義凱</strong>、柯明淳、楊耿明、何曄，2018，台灣西南部地區活動斷層三維數值模型建置之初步研究，2018 台灣地球科學聯合學術研討會，嘉義。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2018，利用斷層三維模型分析地震災損－以車籠埔斷層為例，第 17 屆離島資訊技術與應用研討會，澎湖。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2018，台灣西南地區活動斷層與東部隱沒帶地下構造之三維數值模型建置，國家災害防救科技中心－災害防救電子報，第 154 期。</li>
-      <li>黃俊鴻、盧志杰、郭俊翔、王仁佐、<strong>林義凱</strong>，2018，2016 紐西蘭 Kaikoura 地震勘災摘要報告，地工技術 No.156。</li>
-      <li><strong>林義凱</strong>、劉淑燕、柯明淳，2017，利用三維構造模型評估地震導致地表變形之初步研究，2017 台灣地球科學聯合學術研討會，臺南。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2017，利用活動斷層地下三維模型模擬地震災害影響－以新竹地區為例，第 36 屆空間資訊研討會，臺南。</li>
-      <li><strong>林義凱</strong>、柯明淳、柯孝勳，2017，利用 SKUA-GOCAD 及 GIS 系統建置地下三維斷層模型－以車籠埔斷層為例，國家災害防救科技中心災害防救電子報第 142 期。</li>
-      <li><strong>林義凱</strong>、楊耿明、何曄、楊志成、賴光胤、柯明淳、陳文山、吳逸民、賴奕修、葉柏逸、柯孝勳，2017，台灣西南部及東半部地區活動斷層三維數值模型建置，國家災害防救科技中心 106 年技術報告，NCDR 106-A20。</li>
-    </ol>
-  </div>
-</div>
-
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo-row">
-          <img class="footer-logo-img" src="logo.png" alt="KaiRock">
+          <img class="footer-logo-img" src="favicon.png" alt="KaiRock">
           <div><div class="en">KAIROCK</div><div class="zh">凱岩工程顧問有限公司</div></div>
         </div>
         <p>KaiRock – Bridging Geoscience and Drilling for Geothermal Success.</p>
